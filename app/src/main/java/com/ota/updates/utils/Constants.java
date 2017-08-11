@@ -21,7 +21,7 @@ import android.os.Environment;
 public interface Constants {
 
     // Developer
-    boolean DEBUGGING = false;
+    boolean DEBUGGING = true;
     boolean DEBUG_NOTIFICATIONS = true;
 
     // Props

@@ -55,7 +55,7 @@ public class LoadUpdateManifest extends AsyncTask<Void, Void, Void> implements C
 
             URL url;
             if (DEBUGGING) {
-                url = new URL("https://romhut.com/roms/aosp-jf/ota.xml");
+                url = new URL("https://www.dropbox.com/s/idw6o50s9eoewwj/ota.xml");
             } else {
                 url = new URL(Utils.getProp("ro.ota.manifest").trim());
             }
@@ -79,8 +79,7 @@ public class LoadUpdateManifest extends AsyncTask<Void, Void, Void> implements C
 
             // file finished downloading, parse it!
             RomXmlParser parser = new RomXmlParser();
-            parser.parse(new File(mContext.getFilesDir(), MANIFEST),
-                    mContext);
+            parser.parse(new File(mContext.getFilesDir(), MANIFEST), mContext);
         } catch (Exception e) {
             Log.d(TAG, "Exception: " + e.getMessage());
         }
