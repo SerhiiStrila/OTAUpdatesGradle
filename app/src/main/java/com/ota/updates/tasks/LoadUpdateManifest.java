@@ -24,7 +24,6 @@ import android.util.Log;
 
 import com.ota.updates.R;
 import com.ota.updates.utils.Constants;
-import com.ota.updates.utils.Utils;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -53,12 +52,7 @@ public class LoadUpdateManifest extends AsyncTask<Void, Void, Void> implements C
         try {
             InputStream input = null;
 
-            URL url;
-            if (DEBUGGING) {
-                url = new URL("https://www.dropbox.com/s/idw6o50s9eoewwj/ota.xml");
-            } else {
-                url = new URL(Utils.getProp("ro.ota.manifest").trim());
-            }
+            URL url = new URL(Constants.UPDATE_CONFIG_URL);
             URLConnection connection = url.openConnection();
             connection.connect();
             // download the file

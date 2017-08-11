@@ -14,8 +14,8 @@
     <!-- HTTP link will open a web page -->
     <!-- Direct Link overrides HTTP link -->
     <DirectUrl>
-        <![CDATA[https://www.dropbox.com/s/jgvv89wnta1urye/shamu-ota-n6f26y-5922a09b.zip]]></DirectUrl>
-    <HttpUrl><![CDATA[http://www.dropbox.com]]></HttpUrl>
+        <![CDATA[https://dl.google.com/dl/android/aosp/shamu-ota-n8i11b-6ae9468e.zip]]></DirectUrl>
+    <HttpUrl><![CDATA[http://www.google.com]]></HttpUrl>
     <!-- What version are you issuing? -->
     <Android>7.0.0</Android>
     <!-- Providing File Checking for direct downloads. You SHOULD offer this for your users whether using HTTP or Direct -->

@@ -20,6 +20,9 @@ import android.os.Environment;
 
 public interface Constants {
 
+    String UPDATE_CONFIG_URL
+            = "https://raw.githubusercontent.com/SerhiiStrila/OTAUpdatesGradle/master/ota.xml";
+
     // Developer
     boolean DEBUGGING = true;
     boolean DEBUG_NOTIFICATIONS = true;
